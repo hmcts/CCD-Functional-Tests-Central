@@ -1,0 +1,846 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Set of scenarios to test collection of complex table view",
+    "line": 2,
+    "id": "set-of-scenarios-to-test-collection-of-complex-table-view",
+    "tags": [
+      {
+        "name": "@nestedcollection",
+        "line": 1
+      },
+      {
+        "name": "@functional",
+        "line": 1
+      }
+    ],
+    "uri": "test/features/nestedcollections.feature",
+    "elements": [
+      {
+        "id": "set-of-scenarios-to-test-collection-of-complex-table-view;nested-collection-data-on-case-details-page-not-visible-by-default-when-accordion-is-collapsed",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Nested Collection data on Case Details page not visible by default when accordion is collapsed",
+        "tags": [
+          {
+            "name": "@nestedcollection",
+            "line": 1
+          },
+          {
+            "name": "@functional",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "Path",
+                      "FieldType"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine1",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine2",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine3",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "Country",
+                      "Text"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a case type containing a collection of complex types exists",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I have submitted a case with nested collection data",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17654000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the 'Address Line 2' field will NOT be visible on the 'Collection of Complex' tab",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 308000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2199000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-of-scenarios-to-test-collection-of-complex-table-view;clicking-accordion-on-nested-collection-data-view-in-case-details-shows-datas",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Clicking accordion on nested collection data view in Case Details shows datas",
+        "tags": [
+          {
+            "name": "@nestedcollection",
+            "line": 1
+          },
+          {
+            "name": "@functional",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "Path",
+                      "FieldType"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine1",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine2",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine3",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "Country",
+                      "Text"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "a case type containing a collection of complex types exists",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:47"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I have submitted a case with nested collection data",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click on its first accordion on the 'Collection of Complex' tab",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Address Line 2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Address Line 3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second Line 1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the following fields will be visible:",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ZipCode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second Line 2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the following fields will NOT be visible:",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1973000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-of-scenarios-to-test-collection-of-complex-table-view;clicking-accordion-on-nested-collection-data-view-in-case-details-shows-datas",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Clicking accordion on nested collection data view in Case Details shows datas",
+        "tags": [
+          {
+            "name": "@nestedcollection",
+            "line": 1
+          },
+          {
+            "name": "@functional",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "Path",
+                      "FieldType"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine1",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine2",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine3",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "Country",
+                      "Text"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "a case type containing conditional data of collection of complex types exists",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:58"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I have submitted a case with conditional nested collection data",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:482"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I click on its first accordion on the 'Collection of Complex' tab",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Address Line 2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Address Line 3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ZipCode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second Line 1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second Line 2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the following fields will be visible:",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2177000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-of-scenarios-to-test-collection-of-complex-table-view;complex-type-data-within-a-collection-of-complex-type-is-displayed",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Complex Type data within a Collection of Complex Type is displayed",
+        "tags": [
+          {
+            "name": "@nestedcollection",
+            "line": 1
+          },
+          {
+            "name": "@functional",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "Path",
+                      "FieldType"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine1",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine2",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "AddressLine3",
+                      "Text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CollectionComplexField",
+                      "Country",
+                      "Text"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12462000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "a case type containing a collection of complex types containing complex exists",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:71"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "I have submitted a case with a collection of complex with a complex data",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:504"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "I click on its first accordion on the 'Company Details' tab",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Address Line 1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Address Line 2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Address Line 3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "the following fields will be visible:",
+            "match": {
+              "location": "test/stepDefinitions/caseDetailsSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1965000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "77.0.3865.90"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

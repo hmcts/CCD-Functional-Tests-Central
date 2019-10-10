@@ -1,0 +1,470 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Set of scenarios to test functionality of the order of fixed list",
+    "line": 2,
+    "id": "set-of-scenarios-to-test-functionality-of-the-order-of-fixed-list",
+    "tags": [
+      {
+        "name": "@functional",
+        "line": 1
+      },
+      {
+        "name": "@fixedListOrder",
+        "line": 1
+      }
+    ],
+    "uri": "test/features/fixedListOrder.feature",
+    "elements": [
+      {
+        "id": "set-of-scenarios-to-test-functionality-of-the-order-of-fixed-list;correct-order-of-fixed-list-items-is-displayed",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Correct order of fixed list items is displayed",
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 1
+          },
+          {
+            "name": "@fixedListOrder",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20033000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "FieldType"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MySchool",
+                      "School"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the following definition for 'case fields'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "ListElementCode",
+                      "FieldType",
+                      "FieldTypeParameter"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "School",
+                      "SchoolRegionalCentre",
+                      "FixedRadioList",
+                      "regionalCentreEnum"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "School",
+                      "Class",
+                      "Collection",
+                      "SchoolClass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SchoolClass",
+                      "ClassDetails",
+                      "SchoolClassDetails",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SchoolClass",
+                      "ClassMandatoryFor",
+                      "MultiSelectList",
+                      "classMandatoryForEnum"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SchoolClassDetails",
+                      "ClassLocation",
+                      "SchoolClassLocation",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SchoolClassLocation",
+                      "Building",
+                      "SchoolBuildingDetails",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SchoolBuildingDetails",
+                      "Floor",
+                      "FixedList",
+                      "floorEnum"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the following definition for 'complex types'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ID",
+                      "ListElementCode",
+                      "ListElement",
+                      "DisplayOrder"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mandatoryClassForEnum",
+                      "MSc",
+                      "Master of Science",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mandatoryClassForEnum",
+                      "ScD",
+                      "Doctor of Science",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mandatoryClassForEnum",
+                      "BSc",
+                      "Bachelor of Science",
+                      "2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regionalCentreEnum",
+                      "CARDIFF",
+                      "Cardiff",
+                      "5"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regionalCentreEnum",
+                      "MANCHESTER",
+                      "Manchester",
+                      "2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regionalCentreEnum",
+                      "OXFORD",
+                      "Oxford",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "floorEnum",
+                      "ONE",
+                      "One",
+                      "2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "floorEnum",
+                      "TWO",
+                      "Two",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "floorEnum",
+                      "THREE",
+                      "Three",
+                      "5"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "floorEnum",
+                      "FOUR",
+                      "Four",
+                      "7"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the following definition for 'fixed lists'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "a case type containing a collection of nested complex types exists",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:82"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I navigate to the case creation form page",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:197"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I click on add collection item button",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:241"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2107000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Manchester"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cardiff"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Oxford"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the 'fixed-radio-list' list is in the following order:",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:245"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1147000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BSc"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MSc"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ScD"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the 'multi-select' list is in the following order:",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:245"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "--Select a value--"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "One"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Two"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Three"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Four"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the 'fixed-list' list is in the following order:",
+            "match": {
+              "location": "test/stepDefinitions/create-caseSteps.js:245"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2048000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "77.0.3865.90"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

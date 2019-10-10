@@ -1,0 +1,434 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Set of scenarios to test functionality of the Check Your Answers page",
+    "line": 2,
+    "id": "set-of-scenarios-to-test-functionality-of-the-check-your-answers-page",
+    "tags": [
+      {
+        "name": "@functional",
+        "line": 1
+      },
+      {
+        "name": "@cya",
+        "line": 1
+      }
+    ],
+    "uri": "test/features/checkYourAnswers.feature",
+    "elements": [
+      {
+        "id": "set-of-scenarios-to-test-functionality-of-the-check-your-answers-page;navigate-to-correct-page-via-check-your-answers-'change'-link",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "navigate to correct page via Check Your Answers 'change' link",
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 1
+          },
+          {
+            "name": "@cya",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Event",
+                      "ID",
+                      "FieldType",
+                      "Display context",
+                      "Page id",
+                      "Page label"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldFName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage1",
+                      "Case Multiple Pages: Page 1/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldMName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage2",
+                      "Case Multiple Pages: Page 2/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldLName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage3",
+                      "Case Multiple Pages: Page 3/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "addExtraInf",
+                      "Age",
+                      "Number",
+                      "Optional",
+                      "EventSingleOage",
+                      "Cadd extra details page 1/1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields in events'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I have a case with 3 pages",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am on the check your answers page",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click the change link",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I am navigated back to the page containing the field",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1898000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-of-scenarios-to-test-functionality-of-the-check-your-answers-page;can-change-field-value-via-check-your-answers-'change'-link",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "can change field value via Check Your Answers 'change' link",
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 1
+          },
+          {
+            "name": "@cya",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Event",
+                      "ID",
+                      "FieldType",
+                      "Display context",
+                      "Page id",
+                      "Page label"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldFName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage1",
+                      "Case Multiple Pages: Page 1/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldMName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage2",
+                      "Case Multiple Pages: Page 2/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "createCase",
+                      "TextFieldLName",
+                      "Text",
+                      "Optional",
+                      "MuliFormPage3",
+                      "Case Multiple Pages: Page 3/3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "addExtraInf",
+                      "Age",
+                      "Number",
+                      "Optional",
+                      "EventSingleOage",
+                      "Cadd extra details page 1/1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the following definition for 'case fields in events'",
+            "match": {
+              "location": "test/stepDefinitions/validationSteps.js:21"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I have logged in",
+            "match": {
+              "location": "test/stepDefinitions/loginSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20579000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I have a case with 3 pages",
+            "match": {
+              "location": "test/stepDefinitions/definitionFileSteps.js:7"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I am on the check your answers page",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click the change link",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I change the value of the field",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the new value will be shown in Check Your Answers",
+            "match": {
+              "location": "test/stepDefinitions/cyaSteps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2067000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/stepDefinitions/testSetup.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1931000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "77.0.3865.90"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
